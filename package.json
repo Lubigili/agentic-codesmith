@@ -1,0 +1,44 @@
+{
+  "name": "agentic-codesmith",
+  "version": "0.1.0",
+  "description": "An agentic code generation and enhancement platform powered by LangChain and Monaco Editor",
+  "private": true,
+  "type": "module",
+  "license": "MIT",
+  "scripts": {
+    "dev": "turbo run dev --parallel",
+    "build": "turbo run build",
+    "test": "turbo run test",
+    "lint": "turbo run lint",
+    "format": "turbo run format",
+    "type-check": "turbo run type-check",
+    "clean": "turbo run clean && rm -rf node_modules",
+    "install-deps": "turbo install",
+    "postinstall": "turbo run postinstall --no-cache"
+  },
+  "workspaces": [
+    "packages/*"
+  ],
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^6.13.2",
+    "@typescript-eslint/parser": "^6.13.2",
+    "eslint": "^8.55.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.0.1",
+    "prettier": "^3.1.0",
+    "typescript": "^5.3.3",
+    "turbo": "^1.10.16"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=9.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Lubigili/agentic-codesmith.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Lubigili/agentic-codesmith/issues"
+  },
+  "homepage": "https://github.com/Lubigili/agentic-codesmith#readme"
+}
